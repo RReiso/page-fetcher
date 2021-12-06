@@ -10,6 +10,7 @@ const fetcher = (args) =>{
     return console.log("Missing arguments: specify URL and local file path!");
   }
 
+  //make a request
   const [URI, filePath] = args;
   request(URI, (error, response) => {
     if (!error) {
